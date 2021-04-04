@@ -28,7 +28,7 @@ EXPORTS Main
 ; IMPORT Assertions 
 ; FROM Assertions IMPORT AssertionFailure 
 ; IMPORT Boot 
-; IMPORT Coroutine 
+; IMPORT Coroutines 
 ; IMPORT EstUtil 
 ; IMPORT Files 
 ; IMPORT GenConstEst 
@@ -691,7 +691,7 @@ EXPORTS Main
         Wr . PutText   
           ( Stdio . stderr , "Reparsing text file " & LdlTextFileName1 ) 
       ; LScanIf 
-          := Coroutine . Init 
+          := Coroutines . Init 
                ( NEW ( ScannerIf . ScanIfTyp )
                , Ldl0Scanner . Scan 
                ) 

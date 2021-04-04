@@ -18,11 +18,11 @@ INTERFACE ScannerIf
 
 ; IMPORT LbeStd 
 ; IMPORT Strings 
-; IMPORT Coroutine 
+; IMPORT Coroutines 
 
 ; FROM Assertions IMPORT AssertionFailure 
 
-; TYPE Public = Coroutine . T OBJECT END (* OBJECT *) 
+; TYPE Public = Coroutines . T OBJECT END (* OBJECT *) 
 
 ; TYPE ScanIfTyp <: Public 
 

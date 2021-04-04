@@ -6,7 +6,7 @@
 (* Licensed under the MIT License.                                           *)
 (* -----------------------------------------------------------------------2- *)
 
-MODULE Coroutine 
+MODULE Coroutines 
 
 (* Implement simple paired coroutines.  (Use oversynchronized threads to 
    do it. 
@@ -36,7 +36,7 @@ MODULE Coroutine
         BRANDED 
           Brand 
           OBJECT 
-  (* A Coroutine . T controls the relationship 
+  (* A Coroutines . T controls the relationship 
      between two threads, synchronized as coroutines. *) 
             Closure : ClosureTyp 
 (* CHECK: ^Do we really need this field? *) 
@@ -146,7 +146,7 @@ MODULE Coroutine
       LOCK Cr DO RETURN Cr . ChildHasReturned END (* LOCK *) 
     END HasReturned 
 
-; BEGIN (* Coroutine *) 
-  END Coroutine 
+; BEGIN (* Coroutines *) 
+  END Coroutines 
 . 
 

@@ -8,9 +8,9 @@
 
 INTERFACE M3Scanner 
 
-; IMPORT Coroutine 
+; IMPORT Coroutines 
 
-; PROCEDURE Scan ( Cr : Coroutine . T ) 
+; PROCEDURE Scan ( Cr : Coroutines . T ) 
 
 ; END M3Scanner 
 . 

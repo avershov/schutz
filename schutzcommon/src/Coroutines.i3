@@ -6,7 +6,7 @@
 (* Licensed under the MIT License.                                           *)
 (* -----------------------------------------------------------------------2- *)
 
-INTERFACE Coroutine 
+INTERFACE Coroutines 
 
 (* Implement simple paired coroutines.  (Use oversynchronized threads to 
    do it. 
@@ -14,10 +14,10 @@ INTERFACE Coroutine
 
 ; IMPORT Assertions 
 
-; CONST Brand = "Coroutine.T.Brand" 
+; CONST Brand = "Coroutines.T.Brand" 
 
 ; TYPE T <: ROOT 
-  (* A Coroutine . T controls the relationship 
+  (* A Coroutines . T controls the relationship 
      between two threads, synchronized as coroutines. *) 
 
 ; TYPE ProcOfT = PROCEDURE ( Cr : T ) 
@@ -38,6 +38,6 @@ INTERFACE Coroutine
 ; PROCEDURE HasReturned ( Cr : T ) : BOOLEAN 
   (* TRUE if ChildProc of the child coroutine has returned. *) 
 
-; END Coroutine 
+; END Coroutines 
 . 
 
